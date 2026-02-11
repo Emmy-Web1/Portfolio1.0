@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmy Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">Emmy.Dev</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-text">
+      <h1>I am <span id="typewriter"></span></h1>
+      <p>I create sleek, modern websites & digital experiences for startups, crypto projects, and creator.</p>
+      <a href="#portfolio" class="btn">See My Work</a>
+    </div>
+    <div class="hero-img">
+      <img src="myprofile.JPG" alt="Emmy Profile">
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <div class="service-grid">
+      <div class="service-card animate">
+        <h3>Web Design</h3>
+        <p>Responsive, modern websites designed to convert visitors into customers.</p>
+      </div>
+      <div class="service-card animate">
+        <h3>Landing Pages</h3>
+        <p>High-converting product and crypto project pages with sleek UI.</p>
+      </div>
+      <div class="service-card animate">
+        <h3>UI/UX Design</h3>
+        <p>Clean layouts and intuitive experiences for web and apps.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <h2>My Work</h2>
+
+    <div class="portfolio-buttons">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="crypto">Crypto</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card animate" data-category="web">
+        <img src="web.png" alt="Project 1">
+        <div class="overlay">
+          <h3>Project One</h3>
+          <p>Web App Design</p>
+        </div>
+      </div>
+      <div class="portfolio-card animate" data-category="design">
+        <img src="landing.png" alt="Project 2">
+        <div class="overlay">
+          <h3>Project Two</h3>
+          <p>Landing Page</p>
+        </div>
+      </div>
+      <div class="portfolio-card animate" data-category="crypto">
+        <img src="dasboard.png" alt="Project 3">
+        <div class="overlay">
+          <h3>Project Three</h3>
+          <p>Crypto Dashboard</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: Emmydev6@email.com</p>
+    <p>Phone: +234 9135851041</p>
+  </section>
+
+  <footer>
+    © 2026 Emmy. Built with HTML, CSS & JS.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
